@@ -30,7 +30,7 @@ def predict_datapoint():
             Delivery_person_Ratings = float(request.form.get('Delivery_person_Ratings')),
             Delivery_location_latitude = float(request.form.get('Delivery_location_latitude')),
             Delivery_location_longitude = float(request.form.get('Delivery_location_longitude')),
-            Order_Date = request.form.get('Order_Date'),
+            
             Time_Orderd = request.form.get('Time_Orderd'),
             Time_Order_picked = request.form.get('Time_Order_picked'),
             Weather_conditions= request.form.get('Weather_conditions'),
@@ -40,7 +40,10 @@ def predict_datapoint():
             Type_of_vehicle = request.form.get('Type_of_vehicle'),
             multiple_deliveries =float (request.form.get('multiple_deliveries')),
             Festival= request.form.get('Festival'), 
-            City = request.form.get('City')
+            City = request.form.get('City'),
+            Order_Date_year = float(request.form.get('Order_Date_year')),
+            Order_Date_month= float(request.form.get('Order_Date_month')),
+            Order_Date_day = float(request.form.get('Order_Date_day')),
         )
         final_new_data=data.get_data_as_dataframe()
         print(final_new_data)

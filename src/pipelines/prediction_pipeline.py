@@ -38,7 +38,7 @@ class CustomData:
     Delivery_person_Ratings:float,
     Delivery_location_latitude:float,
     Delivery_location_longitude:float,
-    Order_Date:str,
+    
     Time_Orderd:str,
     Time_Order_picked:str,
     Weather_conditions:str,
@@ -48,14 +48,18 @@ class CustomData:
     Type_of_vehicle:str,
     multiple_deliveries:float,
     Festival:str,
-    City:str):
+
+    City:str,
+    Order_Date_year:float,
+    Order_Date_month:float,
+    Order_Date_day:float):
     
         
         self.Delivery_person_Age=Delivery_person_Age,
         self.Delivery_person_Ratings=Delivery_person_Ratings,
         self.Delivery_location_latitude=Delivery_location_latitude,
         self.Delivery_location_longitude=Delivery_location_longitude,
-        self.Order_Date=Order_Date,
+        
         self.Time_Orderd=Time_Orderd,
         self.Time_Order_picked=Time_Order_picked,
         self.Weather_conditions=Weather_conditions,
@@ -65,7 +69,10 @@ class CustomData:
         self.Type_of_vehicle=Type_of_vehicle,
         self.multiple_deliveries=multiple_deliveries,
         self.Festival=Festival,
-        self.City=City
+        self.City=City,
+        self.Order_Date_year=Order_Date_year,
+        self.Order_Date_month=Order_Date_month,
+        self.Order_Date_day=Order_Date_day,
         
 
     def get_data_as_dataframe(self):
@@ -75,7 +82,7 @@ class CustomData:
                 'Delivery_person_Ratings':[self.Delivery_person_Ratings][0],
                 'Delivery_location_latitude':[self.Delivery_location_latitude][0],
                 'Delivery_location_longitude':[self.Delivery_location_longitude][0],
-                'Order_Date':[self.Order_Date][0],
+                
                 'Time_Orderd':[self.Time_Orderd][0],
                 'Time_Order_picked':[self.Time_Order_picked][0],
                 'Weather_conditions':[self.Weather_conditions][0],
@@ -85,7 +92,10 @@ class CustomData:
                 'Type_of_vehicle':[self.Type_of_vehicle][0],
                 'multiple_deliveries':[self.multiple_deliveries][0],
                 'Festival':[self.Festival][0],
-                'City':[self.City][0]
+                'City':[self.City][0],
+                'Order_Date_year':[self.Order_Date_year][0],
+                'Order_Date_month':[self.Order_Date_month][0],
+                'Order_Date_day':[self.Order_Date_day][0],
                 }
 
             df = pd.DataFrame(custom_data_input_dict)

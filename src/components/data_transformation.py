@@ -29,11 +29,11 @@ class DataTransformation:
             logging.info('Data Transformation initiated')
            
             numerical_cols = ['Delivery_person_Age', 'Delivery_person_Ratings','Delivery_location_latitude', 'Delivery_location_longitude',
-            'Vehicle_condition', 'multiple_deliveries']
+            'Vehicle_condition', 'multiple_deliveries','Order_Date_year','Order_Date_month','Order_Date_day']
             # Define which columns should be ordinal-encoded and which should be onehot encoded
 
             #onehot
-            categorical_cols1 = ['Order_Date', 'Type_of_order','Time_Orderd','Time_Order_picked']
+            categorical_cols1 = [ 'Type_of_order','Time_Orderd','Time_Order_picked']
 
             #ordinal
             categorical_cols2 = ['Weather_conditions', 'Road_traffic_density','Type_of_vehicle', 'Festival', 'City']
@@ -91,6 +91,8 @@ class DataTransformation:
             train_df = pd.read_csv(train_path)
             test_df = pd.read_csv(test_path)
 
+
+
             logging.info('Read train and test data completed')
             logging.info(f'Train Dataframe Head : \n{train_df.head().to_string()}')
             logging.info(f'Test Dataframe Head  : \n{test_df.head().to_string()}')
@@ -105,7 +107,7 @@ class DataTransformation:
             target_feature_test_sr=test_df[target_column_name]
             target_feature_test_df=target_feature_test_sr.to_frame()
 
-            drop_columns = [target_column_name,'Restaurant_latitude','Restaurant_longitude','ID','Delivery_person_ID']
+            drop_columns = [target_column_name]
             input_feature_train_df = train_df.drop(columns=drop_columns, axis=1)
             input_feature_test_df = test_df.drop(columns=drop_columns, axis=1)
             
