@@ -110,22 +110,17 @@ class DataTransformation:
             input_feature_test_df = test_df.drop(columns=drop_columns, axis=1)
             
 
-
-            # Fit preprocessor on training data and transform both training and test data
-            preprocessing_obj.fit(input_feature_train_df)
-            input_feature_train_arr =preprocessing_obj.transform(input_feature_train_df)
-            input_feature_test_arr = preprocessing_obj.transform(input_feature_test_df)
+            ## Trnasformating using preprocessor obj
+            input_feature_train_arr=preprocessing_obj.fit_transform(input_feature_train_df)
+            input_feature_train_arr=input_feature_train_arr.toarray()
+            input_feature_test_arr=preprocessing_obj.transform(input_feature_test_df)
+            input_feature_test_arr=input_feature_test_arr.toarray()
             logging.info("Applying preprocessing object on training and testing datasets.")
+            
 
+            train_arr = np.c_[input_feature_train_arr, np.array(target_feature_train_df)]
+            test_arr = np.c_[input_feature_test_arr, np.array(target_feature_test_df)]
 
-          
-
-
-            train_arr = np.concatenate([input_feature_train_arr, target_feature_train_df], axis=1)
-            test_arr = np.concatenate([input_feature_test_arr, target_feature_test_df], axis=1)
-
-
-      
 
 
 

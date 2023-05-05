@@ -8,3 +8,7 @@ src/__init__.py
 src/exception.py
 src/logger.py
 src/utils.py
+src/components/__init__.py
+src/components/data_injestion.py
+src/components/data_transformation.py
+src/components/model_trainer.py

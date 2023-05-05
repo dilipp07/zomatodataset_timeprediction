@@ -1,0 +1,19 @@
+[2023-05-05 11:10:15,119]  186 werkzeug - WARNING -  * Debugger is active!
+[2023-05-05 11:10:15,120]  186 werkzeug - INFO -  * Debugger PIN: 125-479-754
+[2023-05-05 11:10:37,124]  186 werkzeug - INFO - 172.18.0.2 - - [05/May/2023 11:10:37] "GET / HTTP/1.1" 200 -
+[2023-05-05 11:10:37,461]  186 werkzeug - INFO - 172.18.0.2 - - [05/May/2023 11:10:37] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[2023-05-05 11:10:44,173]  186 werkzeug - INFO - 172.18.0.2 - - [05/May/2023 11:10:44] "GET /predict HTTP/1.1" 200 -
+[2023-05-05 11:15:07,024]  93 root - INFO - Dataframe Gathered
+[2023-05-05 11:15:07,090]  29 root - INFO - Exception occured in prediction
+[2023-05-05 11:15:07,103]  186 werkzeug - INFO - 172.18.0.2 - - [05/May/2023 11:15:07] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+[2023-05-05 11:15:07,332]  186 werkzeug - INFO - 172.18.0.2 - - [05/May/2023 11:15:07] "GET /predict?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+[2023-05-05 11:15:07,332]  186 werkzeug - INFO - 172.18.0.2 - - [05/May/2023 11:15:07] "GET /predict?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+[2023-05-05 11:15:07,484]  186 werkzeug - INFO - 172.18.0.2 - - [05/May/2023 11:15:07] "GET /predict?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+[2023-05-05 11:15:07,706]  186 werkzeug - INFO - 172.18.0.2 - - [05/May/2023 11:15:07] "[36mGET /predict?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+[2023-05-05 11:15:52,902]  93 root - INFO - Dataframe Gathered
+[2023-05-05 11:15:52,931]  29 root - INFO - Exception occured in prediction
+[2023-05-05 11:15:52,941]  186 werkzeug - INFO - 172.18.0.2 - - [05/May/2023 11:15:52] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+[2023-05-05 11:15:53,120]  186 werkzeug - INFO - 172.18.0.2 - - [05/May/2023 11:15:53] "[36mGET /predict?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+[2023-05-05 11:15:53,140]  186 werkzeug - INFO - 172.18.0.2 - - [05/May/2023 11:15:53] "[36mGET /predict?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+[2023-05-05 11:15:53,334]  186 werkzeug - INFO - 172.18.0.2 - - [05/May/2023 11:15:53] "[36mGET /predict?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+[2023-05-05 11:15:53,424]  186 werkzeug - INFO - 172.18.0.2 - - [05/May/2023 11:15:53] "[36mGET /predict?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -

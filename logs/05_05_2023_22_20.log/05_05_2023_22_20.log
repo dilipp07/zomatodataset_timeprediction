@@ -1,0 +1,19 @@
+[2023-05-05 11:22:21,035]  186 werkzeug - WARNING -  * Debugger is active!
+[2023-05-05 11:22:21,035]  186 werkzeug - INFO -  * Debugger PIN: 125-479-754
+[2023-05-05 11:22:28,297]  93 root - INFO - Dataframe Gathered
+[2023-05-05 11:22:28,364]  29 root - INFO - Exception occured in prediction
+[2023-05-05 11:22:28,377]  186 werkzeug - INFO - 172.18.0.2 - - [05/May/2023 11:22:28] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+[2023-05-05 11:22:28,534]  186 werkzeug - INFO - 172.18.0.2 - - [05/May/2023 11:22:28] "[36mGET /predict?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+[2023-05-05 11:22:28,572]  186 werkzeug - INFO - 172.18.0.2 - - [05/May/2023 11:22:28] "[36mGET /predict?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+[2023-05-05 11:22:28,749]  186 werkzeug - INFO - 172.18.0.2 - - [05/May/2023 11:22:28] "[36mGET /predict?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+[2023-05-05 11:22:28,930]  186 werkzeug - INFO - 172.18.0.2 - - [05/May/2023 11:22:28] "[36mGET /predict?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+[2023-05-05 11:22:39,697]  186 werkzeug - INFO - 172.18.0.2 - - [05/May/2023 11:22:39] "GET /predict HTTP/1.1" 200 -
+[2023-05-05 11:23:28,650]  93 root - INFO - Dataframe Gathered
+[2023-05-05 11:23:28,703]  22 root - INFO - done prediction
+[2023-05-05 11:23:28,707]  186 werkzeug - INFO - 172.18.0.2 - - [05/May/2023 11:23:28] "POST /predict HTTP/1.1" 200 -
+[2023-05-05 11:24:44,072]  186 werkzeug - INFO - 172.18.0.2 - - [05/May/2023 11:24:44] "GET /predict HTTP/1.1" 200 -
+[2023-05-05 11:34:11,168]  186 werkzeug - INFO - 172.18.0.2 - - [05/May/2023 11:34:11] "GET /predict HTTP/1.1" 200 -
+[2023-05-05 11:34:47,809]  93 root - INFO - Dataframe Gathered
+[2023-05-05 11:34:47,853]  22 root - INFO - done prediction
+[2023-05-05 11:34:47,854]  186 werkzeug - INFO - 172.18.0.2 - - [05/May/2023 11:34:47] "POST /predict HTTP/1.1" 200 -
+[2023-05-05 11:34:54,715]  186 werkzeug - INFO - 172.18.0.2 - - [05/May/2023 11:34:54] "GET /predict HTTP/1.1" 200 -

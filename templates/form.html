@@ -1,0 +1,137 @@
+<html>
+<body>
+    <h1>Welcome TO Zomato Price Prediction</h1>
+
+<form action="{{url_for('predict_datapoint')}}" method="POST">
+
+    <div class="form-group">
+        <label for="Delivery_person_Age">Delivery_person_Age:</label>
+        <input type="text" id="Delivery_person_Age" name="Delivery_person_Age" placeholder="Enter Delivery_person_Age Eg (32.0)">
+    </div>
+
+    <div class="form-group">
+        <label for="Delivery_person_Ratings">Delivery_person_Ratings:</label>
+        <input type="text" id="Delivery_person_Ratings" name="Delivery_person_Ratings" placeholder="Enter Delivery_person_Ratings Eg (4.1 )">
+    </div>
+
+    <div class="form-group">  
+        <label for="Delivery_location_latitude">Delivery_location_latitude:</label>
+        <input type="text" id="Delivery_location_latitude" name="Delivery_location_latitude" placeholder="Enter Delivery_location_latitude Eg (25.500329 )">
+    </div>
+    
+
+  
+    <div class="form-group">
+        <label for="Delivery_location_longitude">Delivery_location_longitude:</label>
+        <input type="text" id="Delivery_location_longitude" name="Delivery_location_longitude" placeholder="Enter Delivery_location_longitude Eg (81.884279)">
+    </div>
+
+    <div class="form-group">
+        <label for="Order_Date">Order_Date:</label>
+        <input type="text" id="Order_Date" name="Order_Date" placeholder="Enter Order_Date Eg (13-02-2022)">
+    </div>
+  
+    <div class="form-group">
+        <label for="Time_Orderd">Time_Orderd:</label>
+        <input type="text" id="Time_Orderd" name="Time_Orderd" placeholder="Enter Time_Orderd Eg (17:15)">
+    </div>         
+    <div class="form-group">
+        <label for="Time_Order_picked">Time_Order_picked:</label>
+        <input type="text" id="Time_Order_picked" name="Time_Order_picked" placeholder="Enter Time_Order_picked Eg (17:30)">
+    </div>      
+       
+<div class="form-group">
+
+  <label for="Weather_conditions">Weather_conditions:</label>
+  <select id="Weather_conditions" name="Weather_conditions">
+    <option value="Sunny">Sunny</option>
+    <option value="Stormy">Stormy</option>
+    <option value="Sandstorms">Sandstorms</option>
+    <option value="Windy">Windy</option>
+    <option value="Cloudy">Cloudy</option>
+    <option value="Fog">Fog</option>
+  </select>
+</div>
+
+  
+<div class="form-group">
+  <label for="Road_traffic_density">Road_traffic_density:</label>
+  <select id="Road_traffic_density" name="Road_traffic_density">
+
+    <option value="Low">Low</option>
+    <option value="Medium">Medium</option>
+    <option value="High">High</option>
+    <option value="Jam">Jam</option>
+
+  </select>
+</div>
+
+    <div class="form-group">
+        <label for="Vehicle_condition">Vehicle_condition:</label>
+        <input type="text" id="Vehicle_condition" name="Vehicle_condition" placeholder="Enter Vehicle_condition Eg (any integer (0,1.2))">
+    </div>   
+    
+    
+
+<div class="form-group">
+  <label for="Type_of_order">Type_of_order:</label>
+  <select id="Type_of_order" name="Type_of_order">
+
+    <option value="Snack">Snack</option>
+    <option value="Meal">Meal</option>
+    <option value="Drinks">Drinks</option>
+    <option value="Buffet">Buffet</option>
+
+  </select>
+</div>
+
+<div class="form-group">
+  <label for="Type_of_vehicle">Type_of_vehicle:</label>
+  <select id="Type_of_vehicle" name="Type_of_vehicle">
+
+    <option value="electric_scooter">electric_scooter</option>
+    <option value="scooter">scooter</option>
+    <option value="SI1">bicycle</option>
+    <option value="motorcycle">motorcycle</option>
+
+  </select>
+</div>
+
+
+    <div class="form-group">
+        <label for="multiple_deliveries">multiple_deliveries:</label>
+        <input type="text" id="multiple_deliveriesr" name="multiple_deliveries" placeholder="multiple_deliveries Eg (Any integer(1,2,3))">
+    </div>  
+
+<div class="form-group">
+    <label for="Festival">Festival:</label>
+    <select id="Festival" name="Festival">
+      
+        <option value="No">No</option>
+        <option value="Yes">Yes</option>
+
+      
+    </select>
+</div>
+
+<div class="form-group">
+    <label for="City">City:</label>
+    <select id="City" name="City">
+
+      
+        <option value="Urban">Urban</option>
+        <option value="Metropolitian">Metropolitian</option>
+        <option value="Semi-Urban">Semi-Urban</option>
+
+      
+    </select>
+</div>
+      
+      
+
+<div style="clear:both;"></div>
+  <input type="submit" value="Submit">
+</form>
+</body>
+</html>
+
